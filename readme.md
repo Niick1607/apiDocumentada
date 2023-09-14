@@ -64,3 +64,51 @@ Criar arquivo servere.js:
 ```
 touch src/server.js
 ```
+
+Adicionar a porta do servido no .env
+
+```
+PORT = PORTA DO SERVIDOR
+```
+
+## Configuração básica da API com Express
+
+Importar o pacote express
+
+```
+const express = require('express');
+```
+
+Instanciar o express ma variavel app
+
+```
+const app = express();
+```
+
+Recuperar pacote dotenv
+
+```
+const dotenv = require('dotenv').config();
+```
+
+Importando variavel do arquivo .env
+
+```
+const PORT = process.env.PORT;
+```
+
+```
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+```
+
+Adicionar comando para rodar o servidor no arquivo package.json
+
+```
+"start": "nodemon scr/server.js"
+```
+
+Iniciar o servidor
+
+```
+npm start
+```

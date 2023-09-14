@@ -4,7 +4,7 @@
   "description": "* Escolher o local para criar o projeto; * Abrir o git bash nesta pasta;",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
